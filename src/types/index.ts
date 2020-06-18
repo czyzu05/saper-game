@@ -1,5 +1,4 @@
 export enum CellValue {
-    bomb,
     none,
     one,
     two,
@@ -8,7 +7,8 @@ export enum CellValue {
     five,
     six,
     seven,
-    eight
+    eight,
+    bomb
 }
 
 export enum CellState {
