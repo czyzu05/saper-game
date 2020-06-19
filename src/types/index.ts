@@ -1,20 +1,27 @@
 export enum CellValue {
-    none,
-    one,
-    two,
-    three,
-    four,
-    five,
-    six,
-    seven,
-    eight,
-    bomb
+  none,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  bomb
 }
 
 export enum CellState {
-    visible,
-    flagged,
-    unvisible
+  open,
+  visible,
+  flagged
 }
 
-export type Cell = {value: CellValue, state: CellState}
+export type Cell = { value: CellValue; state: CellState; red?: boolean };
+
+export enum Face {
+  smile = "😁",
+  oh = "😮",
+  lost = "😵",
+  won = "😎"
+}
